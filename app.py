@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-import scipy
+import scipy.stats as stats
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -683,7 +683,7 @@ def ensemble(sample):
     pred_xgb = xgboost(sample, xgb_est, xgb_dep)
 
     # Combine the predictions (Majority voting)
-    pred_maj = scipy.stats.mode([pred_lr, pred_svm, pred_rf, pred_xgb], axis=0)[0]
+    pred_maj = stats.mode([pred_lr, pred_svm, pred_rf, pred_xgb], axis=0)[0]
 
     return pred_maj
 
