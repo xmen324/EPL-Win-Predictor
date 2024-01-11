@@ -696,10 +696,19 @@ def ensemble(sample):
 
 # Web app code
 
+st.set_page_config(page_icon="img/pl.jpg", page_title="Pitch Prophet", layout="centered")
+
 st.write("""
-         # EPL Predictions
-         This app predicts results for EPL fixtures!
+         # ⚽ Pitch Prophet 🪄
+         AI powered ✨ **English Premier League** win predictor! 🎯
          """)
+st.write('---')
+
+st.sidebar.header('Links')
+st.sidebar.link_button('GitHub Repo', 'https://github.com/saranggalada/EPL-Win-Predictor')
+st.sidebar.link_button('Data Source', 'https://www.football-data.co.uk/')
+# st.sidebar.link_button('Author', 'https://www.linkedin.com/in/saranggalada')
+st.sidebar.markdown("---\n*Copyright (c) 2024: Sarang Galada*")
 
 # st.sidebar.header('Menu')
 
@@ -766,7 +775,7 @@ for i in range(10):
 
 fixtures = fixtures[['MW', 'HomeTeam', 'AwayTeam', 'Predicted Winner']]
 
-st.write('### Fixtures')
+st.write('### Live Predictions')
 st.dataframe(fixtures)
 
 
