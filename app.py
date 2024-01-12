@@ -696,10 +696,10 @@ def ensemble(sample):
 
 # Web app code
 
-st.set_page_config(page_icon="img/pl.jpg", page_title="Pitch Prophet", layout="centered")
+st.set_page_config(page_icon="img/pl.jpg", page_title="The Pitch Prophecy", layout="centered")
 
 st.write("""
-         # ⚽ Pitch Prophet 🪄
+         # ⚽ The Pitch Prophecy 🪄
          AI powered ✨ **English Premier League** win predictor! 🎯
          """)
 st.write('---')
@@ -775,9 +775,26 @@ for i in range(10):
 
 fixtures = fixtures[['MW', 'HomeTeam', 'AwayTeam', 'Predicted Winner']]
 
-st.write('### Live Predictions')
+st.write('### 🔴 Live Predictions')
 st.dataframe(fixtures)
+# st.dataframe(
+#     fixtures.style.apply(
+#         lambda row: ["background-color: LightGreen;" if x == row['Predicted Winner'] else "" for x in row],
+#         axis=1
+#     )    
+# )
 
+# def highlight(x):
+#     c = f"background-color:red" 
+#     #condition
+#     m = x["Predicted Winner"]
+#     # DataFrame of styles
+#     df1 = pd.DataFrame('', index=x.index, columns=x.columns)
+#     # set columns by condition
+#     df1.loc[m, 'HomeTeam'] = c
+#     return df1
+
+# st.dataframe(fixtures.style.apply(highlight, axis=None))
 
 # outcome = [' Wins!', ' doesn\'t Win :(']
 # msg = hometeam + outcome[pred]
