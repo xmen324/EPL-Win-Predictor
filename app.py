@@ -696,7 +696,7 @@ def ensemble(sample):
 
 # Web app code
 
-st.set_page_config(page_icon="img/crystal ball.jpg", page_title="The Pitch Prophecy", layout="centered")
+st.set_page_config(page_icon="img/crystal ball.jpeg", page_title="The Pitch Prophecy", layout="centered")
 
 st.write("""
          # ⚽ The Pitch Prophecy 🪄
@@ -704,7 +704,7 @@ st.write("""
          """)
 st.write('---')
 
-st.sidebar.image("img/crystal ball.jpg")
+st.sidebar.image("img/crystal ball.jpeg")
 # st.sidebar.markdown("![](https://github.com/saranggalada/EPL-Expected-Goals-Projector/img/wizard.png)", unsafe_allow_html=True)
 st.sidebar.header('The Pitch Prophecy')
 st.sidebar.markdown('---')
