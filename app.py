@@ -696,7 +696,7 @@ def ensemble(sample):
 
 # Web app code
 
-st.set_page_config(page_icon="img/crystal ball.jpeg", page_title="The Pitch Prophecy", layout="centered")
+st.set_page_config(page_icon="img/crystal ball 2.jpeg", page_title="The Pitch Prophecy", layout="centered")
 
 st.write("""
          # ⚽ The Pitch Prophecy 🪄
