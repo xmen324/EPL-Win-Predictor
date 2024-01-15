@@ -711,8 +711,8 @@ st.sidebar.markdown('---')
 st.sidebar.header('See Also')
 st.sidebar.markdown(
     """
-- ⚽[ EPL Viz ]✨(https://epl-viz.streamlit.app/) (Visualizing 24yrs of EPL)
-- 🧙🏼‍♂️[ The xG Philosophy ]⚽(https://xg-philosophy.streamlit.app/) (EPL xG Projector)
+- [⚽ EPL Viz ✨](https://epl-viz.streamlit.app/) (Visualizing 24yrs of EPL)
+- [🧙🏼‍♂️ The xG Philosophy ⚽](https://xg-philosophy.streamlit.app/) (EPL xG Projector)
 """
 )
 st.sidebar.markdown('---')
