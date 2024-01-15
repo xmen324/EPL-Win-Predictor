@@ -696,7 +696,7 @@ def ensemble(sample):
 
 # Web app code
 
-st.set_page_config(page_icon="img/wizard.png", page_title="The Pitch Prophecy", layout="centered")
+st.set_page_config(page_icon="img/crystal ball.jpg", page_title="The Pitch Prophecy", layout="centered")
 
 st.write("""
          # ⚽ The Pitch Prophecy 🪄
@@ -704,9 +704,13 @@ st.write("""
          """)
 st.write('---')
 
-st.sidebar.header('Links')
-st.sidebar.link_button('GitHub Repo', 'https://github.com/saranggalada/EPL-Win-Predictor')
-st.sidebar.link_button('Data Source', 'https://www.football-data.co.uk/')
+st.sidebar.image("img/crystal ball.jpg")
+# st.sidebar.markdown("![](https://github.com/saranggalada/EPL-Expected-Goals-Projector/img/wizard.png)", unsafe_allow_html=True)
+st.sidebar.header('The Pitch Prophecy')
+st.sidebar.markdown('---')
+cols = st.sidebar.columns(2)
+cols[0].link_button('GitHub Repo', 'https://github.com/saranggalada/EPL-Win-Predictor')
+cols[1].link_button('Data Source', 'https://www.football-data.co.uk/')
 # st.sidebar.link_button('Author', 'https://www.linkedin.com/in/saranggalada')
 st.sidebar.markdown("---\n*Copyright (c) 2024: Sarang Galada*")
 
