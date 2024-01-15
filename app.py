@@ -708,6 +708,14 @@ st.sidebar.image("img/crystal ball.jpeg")
 # st.sidebar.markdown("![](https://github.com/saranggalada/EPL-Expected-Goals-Projector/img/wizard.png)", unsafe_allow_html=True)
 st.sidebar.header('The Pitch Prophecy')
 st.sidebar.markdown('---')
+st.sidebar.header('See Also')
+st.sidebar.markdown(
+    """
+- [⚽ EPL Viz ✨](https://epl-viz.streamlit.app/) (Visualizing 24yrs of EPL)
+- [🧙🏼‍♂️ The xG Philosophy ⚽](https://xg-philosophy.streamlit.app/) (EPL xG Projector)
+"""
+)
+st.sidebar.markdown('---')
 cols = st.sidebar.columns(2)
 cols[0].link_button('GitHub Repo', 'https://github.com/saranggalada/EPL-Win-Predictor')
 cols[1].link_button('Data Source', 'https://www.football-data.co.uk/')
