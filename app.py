@@ -707,7 +707,7 @@ st.write('---')
 # Sidebar
 
 st.sidebar.image("img/crystal ball 2.png")
-st.markdown("<h1 style='text-align: center;'>The Pitch Prophecy</h1>", unsafe_allow_html=True)
+st.sidebar.markdown("<h1 style='text-align: center;'>The Pitch Prophecy</h1>", unsafe_allow_html=True)
 # st.sidebar.header('The Pitch Prophecy')
 # cols = st.sidebar.columns(2)
 # cols[0].sidebar.header('The Pitch Prophecy')
@@ -717,8 +717,10 @@ st.sidebar.markdown('---')
 st.sidebar.header('See Also')
 st.sidebar.markdown(
     """
-- [EPL Viz](https://epl-viz.streamlit.app/) 🕵🏼 \n(Visualizing 24yrs of EPL)
-- [The xG Philosophy](https://xg-philosophy.streamlit.app/) 🧙🏼‍♂️ \n(EPL xG Projector)
+- [EPL Viz](https://epl-viz.streamlit.app/) 🕵🏼
+(Visualizing 24yrs of EPL)
+- [The xG Philosophy](https://xg-philosophy.streamlit.app/) 🧙🏼‍♂️
+(EPL xG Projector)
 """
 )
 st.sidebar.markdown('---')
